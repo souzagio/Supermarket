@@ -42,11 +42,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Atualizar\\Formatar\\repos\\Supermarket\\Supermarket.csproj",
+      "projectUniqueName": "D:\\Repositórios\\Supermarket\\Supermarket.csproj",
       "projectName": "Supermarket",
-      "projectPath": "D:\\Atualizar\\Formatar\\repos\\Supermarket\\Supermarket.csproj",
+      "projectPath": "D:\\Repositórios\\Supermarket\\Supermarket.csproj",
       "packagesPath": "C:\\Users\\giova\\.nuget\\packages\\",
-      "outputPath": "D:\\Atualizar\\Formatar\\repos\\Supermarket\\obj\\",
+      "outputPath": "D:\\Repositórios\\Supermarket\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Visual SDKs\\NuGetPackages"

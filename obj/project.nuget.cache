@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jvVQskyaN4jUlm7cuiglIIFmXi2Q5IPUUsCOyWovl6+CmNxhYLcOsU7n2/04qQ0fI2yVidMYXbrALQEVLPQtNg==",
+  "dgSpecHash": "/E0TXy1lkXve4guMm9Dwt/u9CWyUVZqxHj5EYZhVtzRCCiA/T16ug6Rz/WNRBGJthPW5yxRfvf3/soMF7sd/Hw==",
   "success": true,
-  "projectFilePath": "D:\\Atualizar\\Formatar\\repos\\Supermarket\\Supermarket.csproj",
+  "projectFilePath": "D:\\Repositórios\\Supermarket\\Supermarket.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\giova\\.nuget\\packages\\fontawesome\\4.7.0\\fontawesome.4.7.0.nupkg.sha512"
   ],
