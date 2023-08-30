@@ -50,7 +50,6 @@
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(369, 23);
             this.txtPass.TabIndex = 1;
-            this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
             // 
             // button1
             // 
@@ -120,7 +119,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(55)))), ((int)(((byte)(78)))));
-            this.ClientSize = new System.Drawing.Size(583, 349);
+            this.ClientSize = new System.Drawing.Size(573, 349);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label1);
@@ -129,6 +128,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtPass);
             this.Controls.Add(this.txtLogin);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Caixa";

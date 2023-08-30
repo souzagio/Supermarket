@@ -12,22 +12,11 @@ namespace Supermarket
         public Caixa()
         {
             InitializeComponent();
+            this.Text = String.Empty;
+            this.ControlBox = false;
         }
         Classes.Intermed med = new Classes.Intermed();
         public Int16 i = 0;
-        private void txtPass_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           /* try
-            {
-                string Login = txtLogin.Text;
-                string Senha = txtPass.Text;
-                med.Logar(Login, Senha);
-                int i = med.ID;
-                if (i != 0)
-                MessageBox.Show("Encontrado");
-            }
-            catch { }*/
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
