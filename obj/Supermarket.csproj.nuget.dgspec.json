@@ -47,6 +47,10 @@
             "FontAwesome": {
               "target": "Package",
               "version": "[4.7.0, )"
+            },
+            "MetroFramework": {
+              "target": "Package",
+              "version": "[1.2.0.3, )"
             }
           },
           "imports": [

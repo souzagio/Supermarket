@@ -14,6 +14,7 @@
     <SourceRoot Include="D:\Visual SDKs\NuGetPackages\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMetroFramework_Design Condition=" '$(PkgMetroFramework_Design)' == '' ">C:\Users\giova\.nuget\packages\metroframework.design\1.2.0.3</PkgMetroFramework_Design>
     <PkgFontAwesome Condition=" '$(PkgFontAwesome)' == '' ">C:\Users\giova\.nuget\packages\fontawesome\4.7.0</PkgFontAwesome>
   </PropertyGroup>
 </Project>
