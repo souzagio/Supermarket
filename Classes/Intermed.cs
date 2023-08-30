@@ -52,23 +52,24 @@ namespace Supermarket.Classes
 
             cmd.Parameters.Clear();
             cmd.Parameters.Add("@pLogin", MySqlDbType.VarChar).Value = varNome;
-            cmd.Parameters.Add("@pPass", MySqlDbType.VarChar).Value = varSenha;
+            cmd.Parameters.Add("@pSenha", MySqlDbType.VarChar).Value = varSenha;
 
             MySqlParameter IdUser;
             IdUser = cmd.Parameters.Add("@oID", MySqlDbType.Int16);
             IdUser.Direction = ParameterDirection.Output;
-            Dr = cmd.ExecuteReader();
+            
             try
             {
+                cmd.ExecuteNonQuery();
 
+                ID = Convert.ToInt16(IdUser.Value);
 
-                if (Dr.HasRows)
+                if (ID > 0)
                 {
-                    Dr.Read();
-                    ID = Convert.ToInt16(Dr["ID"].ToString());
+                    msg = "Sucesso! Logado";
                 }
-                Dr.Close();
-                Conexao.Close();
+                else msg = "Erro de credenciais";
+                
             }
             catch (MySqlException SqlErrr)
             {

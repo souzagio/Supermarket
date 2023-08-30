@@ -37,9 +37,14 @@ namespace Supermarket
                 string Senha = txtPass.Text;
                 string msg  = med.Logar(Login,Senha);
                 i = med.ID;
-                if (i != 0)
+                if (i > 0)
                 {
-                    MessageBox.Show("Encontrado");
+                    string ID = i.ToString();
+                    MessageBox.Show(ID);
+                }
+                else if(i == -1)
+                {
+                    MessageBox.Show("STP ativa, falha nas credenciais");
                 }
                 else { MessageBox.Show(msg); string rec = i.ToString(); MessageBox.Show(rec); }
             }
