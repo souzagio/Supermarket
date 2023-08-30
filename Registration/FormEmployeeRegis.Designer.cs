@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.bntClear = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.bntAdd = new System.Windows.Forms.Button();
+            this.txtAccount = new System.Windows.Forms.TextBox();
+            this.cmbJob = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnAddCity = new System.Windows.Forms.Button();
             this.cmbGender = new System.Windows.Forms.ComboBox();
             this.cmbCity = new System.Windows.Forms.ComboBox();
@@ -44,14 +52,6 @@
             this.lblCity = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.lblID = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.cmbJob = new System.Windows.Forms.ComboBox();
-            this.txtAccount = new System.Windows.Forms.TextBox();
-            this.bntAdd = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.bntClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,103 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(918, 575);
             this.panel1.TabIndex = 0;
+            // 
+            // bntClear
+            // 
+            this.bntClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntClear.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bntClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bntClear.Location = new System.Drawing.Point(517, 423);
+            this.bntClear.Name = "bntClear";
+            this.bntClear.Size = new System.Drawing.Size(115, 23);
+            this.bntClear.TabIndex = 16;
+            this.bntClear.Text = "Limpar";
+            this.bntClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bntClear.UseCompatibleTextRendering = true;
+            this.bntClear.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancel.Location = new System.Drawing.Point(382, 423);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(115, 23);
+            this.btnCancel.TabIndex = 15;
+            this.btnCancel.Text = "Cancelar";
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCancel.UseCompatibleTextRendering = true;
+            this.btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // bntAdd
+            // 
+            this.bntAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bntAdd.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.bntAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bntAdd.Location = new System.Drawing.Point(248, 423);
+            this.bntAdd.Name = "bntAdd";
+            this.bntAdd.Size = new System.Drawing.Size(115, 23);
+            this.bntAdd.TabIndex = 14;
+            this.bntAdd.Text = "Cadastrar";
+            this.bntAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.bntAdd.UseCompatibleTextRendering = true;
+            this.bntAdd.UseVisualStyleBackColor = true;
+            // 
+            // txtAccount
+            // 
+            this.txtAccount.Location = new System.Drawing.Point(248, 342);
+            this.txtAccount.Name = "txtAccount";
+            this.txtAccount.Size = new System.Drawing.Size(163, 23);
+            this.txtAccount.TabIndex = 13;
+            // 
+            // cmbJob
+            // 
+            this.cmbJob.FormattingEnabled = true;
+            this.cmbJob.Items.AddRange(new object[] {
+            "Masculino",
+            "Feminino",
+            "Outros"});
+            this.cmbJob.Location = new System.Drawing.Point(248, 380);
+            this.cmbJob.Name = "cmbJob";
+            this.cmbJob.Size = new System.Drawing.Size(163, 23);
+            this.cmbJob.TabIndex = 12;
+            // 
+            // label2
+            // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label2.Location = new System.Drawing.Point(35, 378);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 21);
+            this.label2.TabIndex = 11;
+            this.label2.Text = "Cargo";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblTitle.Location = new System.Drawing.Point(337, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(204, 45);
+            this.lblTitle.TabIndex = 10;
+            this.lblTitle.Text = "Cadastro de Funcionário";
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(35, 340);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(97, 21);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "N° da Conta";
             // 
             // btnAddCity
             // 
@@ -243,103 +340,6 @@
             this.lblID.TabIndex = 0;
             this.lblID.Text = "ID do Funcionário";
             // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(35, 340);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 21);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "N° da Conta";
-            // 
-            // lblTitle
-            // 
-            this.lblTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Gabriola", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblTitle.Location = new System.Drawing.Point(337, 9);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(204, 45);
-            this.lblTitle.TabIndex = 10;
-            this.lblTitle.Text = "Cadastro de Funcionário";
-            // 
-            // label2
-            // 
-            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(35, 378);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 21);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Cargo";
-            // 
-            // cmbJob
-            // 
-            this.cmbJob.FormattingEnabled = true;
-            this.cmbJob.Items.AddRange(new object[] {
-            "Masculino",
-            "Feminino",
-            "Outros"});
-            this.cmbJob.Location = new System.Drawing.Point(248, 380);
-            this.cmbJob.Name = "cmbJob";
-            this.cmbJob.Size = new System.Drawing.Size(163, 23);
-            this.cmbJob.TabIndex = 12;
-            // 
-            // txtAccount
-            // 
-            this.txtAccount.Location = new System.Drawing.Point(248, 342);
-            this.txtAccount.Name = "txtAccount";
-            this.txtAccount.Size = new System.Drawing.Size(163, 23);
-            this.txtAccount.TabIndex = 13;
-            // 
-            // bntAdd
-            // 
-            this.bntAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntAdd.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bntAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bntAdd.Location = new System.Drawing.Point(248, 423);
-            this.bntAdd.Name = "bntAdd";
-            this.bntAdd.Size = new System.Drawing.Size(115, 23);
-            this.bntAdd.TabIndex = 14;
-            this.bntAdd.Text = "Cadastrar";
-            this.bntAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bntAdd.UseCompatibleTextRendering = true;
-            this.bntAdd.UseVisualStyleBackColor = true;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(382, 423);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(115, 23);
-            this.btnCancel.TabIndex = 15;
-            this.btnCancel.Text = "Cancelar";
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnCancel.UseCompatibleTextRendering = true;
-            this.btnCancel.UseVisualStyleBackColor = true;
-            // 
-            // bntClear
-            // 
-            this.bntClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntClear.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bntClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bntClear.Location = new System.Drawing.Point(517, 423);
-            this.bntClear.Name = "bntClear";
-            this.bntClear.Size = new System.Drawing.Size(115, 23);
-            this.bntClear.TabIndex = 16;
-            this.bntClear.Text = "Limpar";
-            this.bntClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bntClear.UseCompatibleTextRendering = true;
-            this.bntClear.UseVisualStyleBackColor = true;
-            // 
             // FormEmployeeRegis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -348,7 +348,8 @@
             this.ClientSize = new System.Drawing.Size(918, 575);
             this.Controls.Add(this.panel1);
             this.Name = "FormEmployeeRegis";
-            this.Text = "FormEmployeeRegis";
+            this.Text = "Área de Cadastro";
+            this.Load += new System.EventHandler(this.FormEmployeeRegis_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

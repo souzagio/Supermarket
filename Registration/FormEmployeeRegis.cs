@@ -16,5 +16,10 @@ namespace Supermarket.Registration
         {
             InitializeComponent();
         }
+
+        private void FormEmployeeRegis_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
