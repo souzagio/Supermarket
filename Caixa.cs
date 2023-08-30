@@ -31,7 +31,7 @@ namespace Supermarket
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 string Login = txtLogin.Text;
                 string Senha = txtPass.Text;
@@ -41,6 +41,7 @@ namespace Supermarket
                 {
                     string ID = i.ToString();
                     MessageBox.Show(ID);
+                    
                 }
                 else if(i == -1)
                 {
@@ -48,7 +49,12 @@ namespace Supermarket
                 }
                 else { MessageBox.Show(msg); string rec = i.ToString(); MessageBox.Show(rec); }
             }
-            catch { }
+            catch { }*/
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
