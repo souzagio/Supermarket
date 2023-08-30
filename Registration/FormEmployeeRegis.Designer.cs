@@ -31,55 +31,55 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.bntClear = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.bntAdd = new System.Windows.Forms.Button();
+            this.btnSignUp = new System.Windows.Forms.Button();
             this.txtAccount = new System.Windows.Forms.TextBox();
             this.cmbJob = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAddCity = new System.Windows.Forms.Button();
             this.cmbGender = new System.Windows.Forms.ComboBox();
-            this.cmbCity = new System.Windows.Forms.ComboBox();
+            this.cmbState = new System.Windows.Forms.ComboBox();
             this.maskBirth = new System.Windows.Forms.MaskedTextBox();
             this.dateJoining = new System.Windows.Forms.DateTimePicker();
             this.txtContact = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.lblContact = new System.Windows.Forms.Label();
             this.lblJoining = new System.Windows.Forms.Label();
             this.lblGender = new System.Windows.Forms.Label();
             this.lblBirth = new System.Windows.Forms.Label();
-            this.lblCity = new System.Windows.Forms.Label();
+            this.lblState = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.lblID = new System.Windows.Forms.Label();
+            this.btnCity = new System.Windows.Forms.Button();
+            this.cmbCity = new System.Windows.Forms.ComboBox();
+            this.lblCity = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblCity);
+            this.panel1.Controls.Add(this.btnCity);
+            this.panel1.Controls.Add(this.cmbCity);
             this.panel1.Controls.Add(this.bntClear);
             this.panel1.Controls.Add(this.btnCancel);
-            this.panel1.Controls.Add(this.bntAdd);
+            this.panel1.Controls.Add(this.btnSignUp);
             this.panel1.Controls.Add(this.txtAccount);
             this.panel1.Controls.Add(this.cmbJob);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.btnAddCity);
             this.panel1.Controls.Add(this.cmbGender);
-            this.panel1.Controls.Add(this.cmbCity);
+            this.panel1.Controls.Add(this.cmbState);
             this.panel1.Controls.Add(this.maskBirth);
             this.panel1.Controls.Add(this.dateJoining);
             this.panel1.Controls.Add(this.txtContact);
             this.panel1.Controls.Add(this.txtName);
-            this.panel1.Controls.Add(this.txtID);
             this.panel1.Controls.Add(this.lblContact);
             this.panel1.Controls.Add(this.lblJoining);
             this.panel1.Controls.Add(this.lblGender);
             this.panel1.Controls.Add(this.lblBirth);
-            this.panel1.Controls.Add(this.lblCity);
+            this.panel1.Controls.Add(this.lblState);
             this.panel1.Controls.Add(this.lblName);
-            this.panel1.Controls.Add(this.lblID);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -91,7 +91,7 @@
             this.bntClear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bntClear.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.bntClear.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bntClear.Location = new System.Drawing.Point(517, 423);
+            this.bntClear.Location = new System.Drawing.Point(507, 376);
             this.bntClear.Name = "bntClear";
             this.bntClear.Size = new System.Drawing.Size(115, 23);
             this.bntClear.TabIndex = 16;
@@ -105,7 +105,7 @@
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancel.Location = new System.Drawing.Point(382, 423);
+            this.btnCancel.Location = new System.Drawing.Point(372, 376);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(115, 23);
             this.btnCancel.TabIndex = 15;
@@ -114,23 +114,23 @@
             this.btnCancel.UseCompatibleTextRendering = true;
             this.btnCancel.UseVisualStyleBackColor = true;
             // 
-            // bntAdd
+            // btnSignUp
             // 
-            this.bntAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bntAdd.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.bntAdd.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bntAdd.Location = new System.Drawing.Point(248, 423);
-            this.bntAdd.Name = "bntAdd";
-            this.bntAdd.Size = new System.Drawing.Size(115, 23);
-            this.bntAdd.TabIndex = 14;
-            this.bntAdd.Text = "Cadastrar";
-            this.bntAdd.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.bntAdd.UseCompatibleTextRendering = true;
-            this.bntAdd.UseVisualStyleBackColor = true;
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSignUp.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnSignUp.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSignUp.Location = new System.Drawing.Point(238, 376);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(115, 23);
+            this.btnSignUp.TabIndex = 14;
+            this.btnSignUp.Text = "Cadastrar";
+            this.btnSignUp.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSignUp.UseCompatibleTextRendering = true;
+            this.btnSignUp.UseVisualStyleBackColor = true;
             // 
             // txtAccount
             // 
-            this.txtAccount.Location = new System.Drawing.Point(248, 342);
+            this.txtAccount.Location = new System.Drawing.Point(238, 295);
             this.txtAccount.Name = "txtAccount";
             this.txtAccount.Size = new System.Drawing.Size(163, 23);
             this.txtAccount.TabIndex = 13;
@@ -142,7 +142,7 @@
             "Masculino",
             "Feminino",
             "Outros"});
-            this.cmbJob.Location = new System.Drawing.Point(248, 380);
+            this.cmbJob.Location = new System.Drawing.Point(238, 333);
             this.cmbJob.Name = "cmbJob";
             this.cmbJob.Size = new System.Drawing.Size(163, 23);
             this.cmbJob.TabIndex = 12;
@@ -153,7 +153,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(35, 378);
+            this.label2.Location = new System.Drawing.Point(25, 331);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 21);
             this.label2.TabIndex = 11;
@@ -177,25 +177,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(35, 340);
+            this.label1.Location = new System.Drawing.Point(25, 293);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 21);
             this.label1.TabIndex = 9;
             this.label1.Text = "N° da Conta";
-            // 
-            // btnAddCity
-            // 
-            this.btnAddCity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddCity.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAddCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnAddCity.Location = new System.Drawing.Point(426, 152);
-            this.btnAddCity.Name = "btnAddCity";
-            this.btnAddCity.Size = new System.Drawing.Size(115, 23);
-            this.btnAddCity.TabIndex = 8;
-            this.btnAddCity.Text = "Adicionar";
-            this.btnAddCity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAddCity.UseCompatibleTextRendering = true;
-            this.btnAddCity.UseVisualStyleBackColor = true;
             // 
             // cmbGender
             // 
@@ -204,22 +190,22 @@
             "Masculino",
             "Feminino",
             "Outros"});
-            this.cmbGender.Location = new System.Drawing.Point(248, 230);
+            this.cmbGender.Location = new System.Drawing.Point(238, 183);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(163, 23);
             this.cmbGender.TabIndex = 5;
             // 
-            // cmbCity
+            // cmbState
             // 
-            this.cmbCity.FormattingEnabled = true;
-            this.cmbCity.Location = new System.Drawing.Point(248, 152);
-            this.cmbCity.Name = "cmbCity";
-            this.cmbCity.Size = new System.Drawing.Size(163, 23);
-            this.cmbCity.TabIndex = 3;
+            this.cmbState.FormattingEnabled = true;
+            this.cmbState.Location = new System.Drawing.Point(238, 105);
+            this.cmbState.Name = "cmbState";
+            this.cmbState.Size = new System.Drawing.Size(163, 23);
+            this.cmbState.TabIndex = 3;
             // 
             // maskBirth
             // 
-            this.maskBirth.Location = new System.Drawing.Point(248, 191);
+            this.maskBirth.Location = new System.Drawing.Point(238, 144);
             this.maskBirth.Name = "maskBirth";
             this.maskBirth.Size = new System.Drawing.Size(163, 23);
             this.maskBirth.TabIndex = 4;
@@ -228,7 +214,7 @@
             // 
             this.dateJoining.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dateJoining.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateJoining.Location = new System.Drawing.Point(248, 261);
+            this.dateJoining.Location = new System.Drawing.Point(238, 214);
             this.dateJoining.MaxDate = new System.DateTime(2500, 12, 31, 0, 0, 0, 0);
             this.dateJoining.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
             this.dateJoining.Name = "dateJoining";
@@ -237,24 +223,17 @@
             // 
             // txtContact
             // 
-            this.txtContact.Location = new System.Drawing.Point(248, 304);
+            this.txtContact.Location = new System.Drawing.Point(238, 257);
             this.txtContact.Name = "txtContact";
             this.txtContact.Size = new System.Drawing.Size(163, 23);
             this.txtContact.TabIndex = 7;
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(248, 114);
+            this.txtName.Location = new System.Drawing.Point(238, 67);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(415, 23);
             this.txtName.TabIndex = 2;
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(248, 76);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(163, 23);
-            this.txtID.TabIndex = 1;
             // 
             // lblContact
             // 
@@ -262,7 +241,7 @@
             this.lblContact.AutoSize = true;
             this.lblContact.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblContact.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblContact.Location = new System.Drawing.Point(35, 302);
+            this.lblContact.Location = new System.Drawing.Point(25, 255);
             this.lblContact.Name = "lblContact";
             this.lblContact.Size = new System.Drawing.Size(69, 21);
             this.lblContact.TabIndex = 0;
@@ -274,7 +253,7 @@
             this.lblJoining.AutoSize = true;
             this.lblJoining.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblJoining.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblJoining.Location = new System.Drawing.Point(35, 264);
+            this.lblJoining.Location = new System.Drawing.Point(25, 217);
             this.lblJoining.Name = "lblJoining";
             this.lblJoining.Size = new System.Drawing.Size(141, 21);
             this.lblJoining.TabIndex = 0;
@@ -286,7 +265,7 @@
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblGender.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblGender.Location = new System.Drawing.Point(35, 226);
+            this.lblGender.Location = new System.Drawing.Point(25, 179);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(46, 21);
             this.lblGender.TabIndex = 0;
@@ -298,23 +277,23 @@
             this.lblBirth.AutoSize = true;
             this.lblBirth.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblBirth.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblBirth.Location = new System.Drawing.Point(35, 188);
+            this.lblBirth.Location = new System.Drawing.Point(25, 141);
             this.lblBirth.Name = "lblBirth";
             this.lblBirth.Size = new System.Drawing.Size(134, 21);
             this.lblBirth.TabIndex = 0;
             this.lblBirth.Text = "Data Nascimento";
             // 
-            // lblCity
+            // lblState
             // 
-            this.lblCity.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblCity.AutoSize = true;
-            this.lblCity.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblCity.Location = new System.Drawing.Point(35, 150);
-            this.lblCity.Name = "lblCity";
-            this.lblCity.Size = new System.Drawing.Size(61, 21);
-            this.lblCity.TabIndex = 0;
-            this.lblCity.Text = "Cidade";
+            this.lblState.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblState.AutoSize = true;
+            this.lblState.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblState.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblState.Location = new System.Drawing.Point(25, 103);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(59, 21);
+            this.lblState.TabIndex = 0;
+            this.lblState.Text = "Estado";
             // 
             // lblName
             // 
@@ -322,23 +301,45 @@
             this.lblName.AutoSize = true;
             this.lblName.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lblName.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblName.Location = new System.Drawing.Point(35, 112);
+            this.lblName.Location = new System.Drawing.Point(25, 65);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(168, 21);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Nome do Funcionário";
             // 
-            // lblID
+            // btnCity
             // 
-            this.lblID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblID.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblID.Location = new System.Drawing.Point(35, 74);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(139, 21);
-            this.lblID.TabIndex = 0;
-            this.lblID.Text = "ID do Funcionário";
+            this.btnCity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCity.Font = new System.Drawing.Font("Gabriola", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCity.Location = new System.Drawing.Point(659, 105);
+            this.btnCity.Name = "btnCity";
+            this.btnCity.Size = new System.Drawing.Size(80, 23);
+            this.btnCity.TabIndex = 18;
+            this.btnCity.Text = "Adicionar";
+            this.btnCity.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnCity.UseCompatibleTextRendering = true;
+            this.btnCity.UseVisualStyleBackColor = true;
+            // 
+            // cmbCity
+            // 
+            this.cmbCity.FormattingEnabled = true;
+            this.cmbCity.Location = new System.Drawing.Point(474, 105);
+            this.cmbCity.Name = "cmbCity";
+            this.cmbCity.Size = new System.Drawing.Size(179, 23);
+            this.cmbCity.TabIndex = 17;
+            // 
+            // lblCity
+            // 
+            this.lblCity.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblCity.AutoSize = true;
+            this.lblCity.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCity.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCity.Location = new System.Drawing.Point(407, 105);
+            this.lblCity.Name = "lblCity";
+            this.lblCity.Size = new System.Drawing.Size(61, 21);
+            this.lblCity.TabIndex = 19;
+            this.lblCity.Text = "Cidade";
             // 
             // FormEmployeeRegis
             // 
@@ -359,21 +360,18 @@
         #endregion
 
         private Panel panel1;
-        private Button btnAddCity;
         private ComboBox cmbGender;
-        private ComboBox cmbCity;
+        private ComboBox cmbState;
         private MaskedTextBox maskBirth;
         private DateTimePicker dateJoining;
         private TextBox txtContact;
         private TextBox txtName;
-        private TextBox txtID;
         private Label lblContact;
         private Label lblJoining;
         private Label lblGender;
         private Label lblBirth;
-        private Label lblCity;
+        private Label lblState;
         private Label lblName;
-        private Label lblID;
         private TextBox txtAccount;
         private ComboBox cmbJob;
         private Label label2;
@@ -381,6 +379,9 @@
         private Label label1;
         private Button bntClear;
         private Button btnCancel;
-        private Button bntAdd;
+        private Button btnSignUp;
+        private Label lblCity;
+        private Button btnCity;
+        private ComboBox cmbCity;
     }
 }
