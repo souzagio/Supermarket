@@ -17,19 +17,6 @@ namespace Supermarket.Registration
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text != "")
-            {
-                string mail = textBox1.Text;
-                string msg = Classes.MailSet.SendMail(mail);
-                MessageBox.Show(msg, "Aviso");
-            }
-            else
-            {
-                textBox1.Clear(); textBox1.Focus();
-               
-            }
-        }
+       
     }
 }

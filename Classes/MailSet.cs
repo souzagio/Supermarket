@@ -9,13 +9,13 @@ namespace Supermarket.Classes
 
         public static string SendMail(string email)
         {
-            // Configurações do servidor SMTP da Microsoft (Outlook/Hotmail)
+            // Configurações do servidor SMTP 
             string smtpServer = "smtp.office365.com";
-            int smtpPort = 587; // Porta do servidor SMTP
-            string smtpUsername = "conectmark@outlook.com.br"; // Seu endereço de e-mail do Outlook/Hotmail
-            string smtpPassword = "*Doris2005#"; // Sua senha de e-mail
+            int smtpPort = 587; 
+            string smtpUsername = "conectmark@outlook.com.br"; 
+            string smtpPassword = "*Doris2005#"; 
 
-            // Endereço de e-mail do remetente e destinatário
+            // Remetente e destinatário
             string remetente = "conectmark@outlook.com.br";
             string destinatario = email;
 
