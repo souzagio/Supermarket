@@ -13,7 +13,7 @@ namespace Supermarket.Classes
             string smtpServer = "smtp.office365.com";
             int smtpPort = 587; 
             string smtpUsername = "conectmark@outlook.com.br"; 
-            string smtpPassword = "*Doris2005#"; 
+            string smtpPassword = "*****"; 
 
             // Remetente e destinatário
             string remetente = "conectmark@outlook.com.br";
